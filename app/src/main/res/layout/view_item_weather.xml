@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/match_wrap"
+    android:orientation="horizontal"
+    android:padding="@dimen/fab_margin"
+    android:weightSum="3">
+
+    <TextView
+        android:id="@+id/tvItemDay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:layout_gravity="center_vertical"
+        tools:text="today"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivItemWeatherIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/bg_banner"/>
+        <TextView
+            android:id="@+id/tvItemWeatherDesc"
+            style="@style/wrap_content"
+            tools:text="Clouds"
+            android:layout_gravity="center"
+            android:layout_marginLeft="4dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvItemWeatherInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:gravity="right"
+        tools:text="@string/lbl_item_weather"/>
+
+</LinearLayout>
